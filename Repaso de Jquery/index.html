@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Css/Estilos.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Title</title>
+</head>
+
+<body>
+
+    <!--Inicio Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#header">Home</a>
+                <a class="nav-item nav-link" href="#comentarios">About</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Fin Navegacion-->
+
+
+    <!--Inicio seccion -->
+    <section id="header">
+
+        <div class="container mt-5">
+
+            <div class="row ">
+                <!--Columna de 6 con imagen Iqz-->
+                <div class="col-lg-6 col-sm-12 ">
+                    <div class="header-content-left ">
+                        <img class="img-fluid" src="img/image1.jpeg" id="imgs" style="width: 100%;" alt="">
+                    </div>
+                </div>
+                <!--Columna de 6 con imagen Derecha-->
+                <div class="col-lg-6 col-sm-12 ">
+                    <div class="header-content-rigth">
+                        <h1>Sit asperiores voluptas atque autem?</h1>
+                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias consequuntur corrupti iusto. Doloremque non error cumque laudantium ipsa atque, nobis maxime, facilis dolorem aliquid perferendis quae minima, illo modi.</p>
+                        <a name="" id="ver" class="btn  btn-outline-primary btn-lg btn-block mt-5 header-btn" href="#" role="button">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--fin seccion -->
+
+    <!--Inicio seccion 2-->
+    <section id="comentarios">
+        <div class="container col-sm-12">
+            <p class="h2 mb-2">
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusamus non! Rem, quasi saepe! Dignissimos facere ipsam quasi? Quod saepe dicta sunt laboriosam delectus corrupti soluta quam ipsa molestiae laborum.
+            </p>
+            <p class="h4">--Master Moises </p>
+            <!-- Button trigger modal -->
+            <!-- Button to Open the Modal -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto odit earum sed assumenda quis ad nulla placeat amet illo quas blanditiis quod expedita consequuntur quae, quisquam provident soluta aspernatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis aliquam eum! Harum, magni non. Laboriosam nesciunt aut a facilis rerum perspiciatis, harum velit necessitatibus aliquam modi temporibus molestias optio?</p>
+
+        </div>
+
+    </section>
+
+    <!--Fin seccion 2-->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+<script>
+    //Libreria Scroll Reveal 
+    //Instalacion con CDN 
+    //Crear Instancia 
+    //Parametro 1 la etiqueta a afectar
+    //Parametro 2 un objeto 
+    //duration: 3000, En milisegundos 
+    //origin: // Direccion con las propiedades de CSS top, bottom , left , rigth 
+    //distance: '200px', Distancia del origen
+    //delay: 2000  Efecto
+    window.sr = ScrollReveal();
+
+
+
+    sr.reveal("#navbar", {
+
+        duration: 3000,
+        origin: 'bottom'
+
+
+    });
+
+    sr.reveal(".header-content-left", {
+
+        duration: 1000,
+        origin: 'top',
+        distance: '200px',
+
+
+    })
+    $(document).ready(function() {
+        $("#MyModal").modal();
+    });
+</script>
